@@ -27,7 +27,7 @@
 }
 
 .Movie-wrapper {
-  width: 500px;
+  width: 300px;
   background-color: antiquewhite;
   color: black;
 }
@@ -43,7 +43,7 @@
 
 .Movie-title {
   height: 60px;
-  margin-top: 26px;
+  margin-top: 23px;
   font-weight: bold;
 }
 

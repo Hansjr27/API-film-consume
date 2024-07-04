@@ -16,7 +16,7 @@ const App = () => {
       return (
           <div className='Movie-wrapper' key={i}>
             <div className="Movie-title">{movie.title}</div>
-            <img className="Movie-image" width="100%" src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`} alt={movie.title} />
+            <img className="Movie-image" width="300rem" src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`} alt={movie.title} />
             <div className="Movie-date">Launching: {movie.release_date}</div>
             <div className="Movie-rate">Ratting: {movie.vote_average}</div>
           </div>
