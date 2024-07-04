@@ -27,7 +27,7 @@
 }
 
 .Movie-wrapper {
-  width: 20%;
+  width: 500px;
   background-color: antiquewhite;
   color: black;
 }
@@ -55,6 +55,6 @@
   color: red;
   margin-bottom: 24px;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1.2em;
   text-decoration: underline;
 }
