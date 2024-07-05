@@ -21,15 +21,17 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   gap: 20px;
+  justify-content: center;
+  color: black;
+  position: relative;
+  overflow: hidden; /* Ensure content stays within the card bounds */
 }
 
 .Movie-wrapper {
   width: 300px;
-  background-color: antiquewhite;
   color: black;
+  position: relative;
 }
 
 .Movie-search {
@@ -42,14 +44,30 @@
   font-weight: bold;
 }
 
+.Card-info {
+  position: absolute;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.418);
+  width: 300px;
+  bottom: 0;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+}
+
+.Movie-image {
+  border-radius: 0.8rem;
+}
+
 .Movie-title {
   height: 60px;
   margin-top: 23px;
   font-weight: bold;
+  color: antiquewhite;
 }
 
 .Movie-date {
   font-style: italic;
+  color: antiquewhite;
 }
 
 .Movie-rate {
@@ -58,4 +76,17 @@
   font-weight: bold;
   font-size: 1.2em;
   text-decoration: underline;
+}
+
+.Movie-date,
+.Movie-rate,
+.Movie-title {
+  display: none; /* Hide date and rating initially */
+}
+
+.Movie-wrapper:hover .Movie-date,
+.Movie-wrapper:hover .Movie-rate,
+.Movie-wrapper:hover .Movie-title {
+  display: block; /* Show date and rating on hover */
+
 }
